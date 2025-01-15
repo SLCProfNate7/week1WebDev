@@ -5,17 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nate's Cool Website</title>
-</head>
-<body>
-    <a href="page2.html">Link to page 2</a>
 
+    <style>
+        .bold{
+            font-weight: bold;
+        }
+        .red{
+            color: red;
+        }
+    </style>
+
+</head> 
+<body>
+    <div class="bold red">
+        <p>This is bold red text</p>
+        <a href="page2.html">Link to page 2</a>
+
+        <!-- "#name creates a link to an id on your page"-->
+        <a href="#steve">Go to the Bottom</a>
+    </div>
     <h2>Nate AKA Prof Sir</h2>
 
-    <img src="images/Man.png" alt="Avatare of Me">
+    <img src="images/Man.png" alt="Avatar of Me">
 
-    <h4>My favorite game: Legend of Zelda</h4>
+    <h4 class="red">My favorite game: Legend of Zelda</h4>
 
-    <p>Zelda is great since it captures the exploration and feel of an adventure.</p>
+    <p >Zelda is great since it captures the exploration and feel of an adventure.</p>
     
     <p><b>Stats</b></p>
     
@@ -24,5 +39,39 @@
         <li>Developer: Nintendo</li>
         <li>Date Released: 1986</li>
     </ul>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec mauris vel neque mollis bibendum a eu sem. Nulla sem nunc, vehicula ac finibus quis, porttitor a eros. Vestibulum blandit lacus augue, a iaculis nibh tempus in. Vestibulum vitae lectus id erat laoreet aliquet sit amet quis elit. Maecenas sed turpis lorem. Nulla non ex magna. Vestibulum vitae egestas massa. Phasellus elit libero, facilisis ut dapibus et, faucibus sed nunc. Donec aliquet turpis in bibendum lobortis. Nam consequat rutrum enim vitae blandit. Integer nec nisl nec ligula semper varius. Donec ac cursus velit, et faucibus ante. Integer hendrerit nisl ornare, dictum diam ac, pulvinar quam. In tristique leo eu pellentesque sodales. Proin rutrum dapibus neque.
+
+        Fusce tempus nulla non erat porttitor, eget sollicitudin quam convallis. Donec vulputate porttitor augue ut facilisis. Ut eget accumsan augue. Duis fermentum urna vitae nisl vehicula porta. Pellentesque tristique felis eleifend rutrum gravida. Morbi a massa ac diam dapibus porttitor eu in odio. Duis id aliquet arcu. Suspendisse in quam felis. Nunc feugiat, enim id tincidunt vehicula, felis nisl maximus tortor, sit amet imperdiet lacus tortor vel justo.
+        
+        Pellentesque mattis in nulla quis finibus. Aenean ac blandit lacus, ac fermentum sapien. Suspendisse hendrerit finibus purus, quis gravida diam porttitor eget. Aliquam rutrum est sapien, vel tristique nulla suscipit at. Nam faucibus pellentesque lacus, id dictum justo tincidunt et. Mauris consectetur dolor ut lacus pretium, a tincidunt quam pellentesque. Nunc bibendum, sapien eget dapibus pretium, urna nisl euismod sem, eu dapibus sem leo nec arcu. Aliquam molestie rhoncus tortor vitae tempor. Cras gravida laoreet elit, eget facilisis leo pulvinar at. Aliquam nec lorem varius, laoreet mi eleifend, volutpat tortor.
+        
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras ut purus ac eros laoreet vehicula. Suspendisse commodo mauris id quam imperdiet ultricies. Duis ante nunc, pellentesque quis libero eget, varius sodales nisi. Donec vitae fermentum arcu. Sed vel turpis rhoncus, imperdiet arcu eget, molestie tortor. Maecenas magna ligula, ultrices et volutpat sed, sagittis at dui.
+        
+        Nam sit amet nisi eu felis ornare facilisis nec vel sapien. Nam mi ipsum, efficitur suscipit porta ac, aliquam quis libero. Nunc ut risus odio. Praesent suscipit enim vitae arcu suscipit, quis suscipit felis viverra. Suspendisse scelerisque efficitur dui quis pretium. In semper turpis leo, nec mattis nibh feugiat eget. Suspendisse in erat at nibh consequat tristique. Ut quis metus vitae elit ultrices pretium. Donec varius mi mauris, quis tincidunt sem lobortis quis. Donec eget dolor auctor, tincidunt nibh at, sollicitudin ante. Etiam pharetra nisi diam, commodo gravida diam eleifend ut. Duis posuere ex quis aliquam volutpat. Nullam faucibus velit ac ultrices ultricies. Vestibulum sit amet purus ligula.</p>
+
+    <footer> 
+        <p id="steve">
+            I am at the foot of the page
+        </p>
+
+        <!-- "" in your link refreshes the page-->
+        <a href="">Go to the top</a>
+    </footer>    
+
+
+    <script>
+        var message = "Hello World";
+        console.log("Wassup");
+        console.log(message);
+
+        //Creating a variable called "myTag"
+        //assigning data
+        //document means  (This current DOM version)
+        // getElementById <-- Get the tag that is associated with the ID "Steve" 
+        var myTag = document.getElementById("steve");
+
+        myTag.innerText = "I am the new Inner Text";
+    </script>
 </body>
 </html>
